@@ -1,0 +1,26 @@
+body { margin: 0; overflow: hidden; font-family: 'Arial', sans-serif; }
+#info { position: absolute; top: 10px; left: 0; right: 0; text-align: center; color: white; z-index: 100; }
+#score { position: absolute; bottom: 10px; left: 0; right: 0; text-align: center; color: white; z-index: 100; }
+.choice { display: inline-block; margin: 5px; cursor: pointer; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 5px; transition: all 0.3s; }
+.choice:hover { background: rgba(255,255,255,0.4); transform: scale(1.1); }
+#result { margin-top: 20px; font-size: 18px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+#particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+@media (max-width: 600px) {
+    #info { top: 5px; }
+    .choice { padding: 8px 16px; font-size: 14px; }
+    #result { font-size: 16px; margin-top: 10px; }
+    #score { font-size: 14px; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #info { top: 20px; }
+    .choice { padding: 12px 24px; font-size: 16px; }
+    #result { font-size: 20px; }
+}
+
+@media (min-width: 1025px) {
+    #info { top: 30px; }
+    .choice { padding: 15px 30px; font-size: 18px; }
+    #result { font-size: 24px; }
+}
